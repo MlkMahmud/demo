@@ -22,6 +22,4 @@ jobs:
           username: mlkmahmud
           key: ${{ secrets.SSH_KEY }}
           port: 22
-          script: |
-            export PROJECT_VERSION=$(git describe --tags)
-            /bin/bash sample_deploy.sh
+          script: /bin/bash sample_deploy.sh
